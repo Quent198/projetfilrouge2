@@ -1,0 +1,269 @@
+@use "../src/assets/styles/mixin" as mixin;
+
+
+.Footer {
+    width: 100%;
+    height: 526px;
+    padding: 64px 128px;
+    background: rgb(28, 28, 32);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    @media (max-width:500px) {
+        height: 823px;
+        position: relative;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FooterContainer1 {
+        flex: 1 1 0px;
+        align-self: stretch;
+        flex-direction: column;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width:500px) {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .Newsletters {
+        height: 160px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .NewslettersTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: stretch;
+        height: 80px;
+        gap: 24px;
+    }
+    .TitleSubscribe {
+        width: 469px;
+        color: white;
+        font-size: 40px;
+        font-family: Spectral;
+        font-weight: 400;
+        overflow-wrap: break-word;
+       
+    }
+    .NewslettersEmail {
+        align-self: stretch;
+        padding: 14px 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgb(52, 52, 60);
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:500px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .EmailName {
+        opacity: 0.5;
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400;
+        overflow-wrap: break-word
+    }
+    
+    .SocialNetwork {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    
+    .FooterContainer2 {
+        width: 484px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 140px;
+        @media (max-width:500px) {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+    .AboutContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: stretch;
+        height: 294px;
+        gap: 48px;
+    }
+    .AboutUs {
+        align-self: stretch;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .AboutLeft {
+        flex: 1 1 0px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .AboutLeftName {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: stretch;
+        height: 124px;
+        gap: 6px;
+    }
+    .AboutName {
+        align-self: stretch;
+        opacity: 0.8;
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+    .AboutRight {
+        flex: 1 1 0px;
+        padding-top: 38px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .ContactUs {
+        align-self: stretch;
+        height: 84px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .AboutContactTitle {
+        align-self: stretch;
+        opacity: 0.4;
+        color: white;
+        font-size: 10px;
+        font-family: Inter;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        overflow-wrap: break-word;
+        @media (max-width:500px) {
+            font-size: 8px;
+            align-items: center;
+        }
+    }
+    .ContactPerson {
+        align-self: stretch;
+        height: 46px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .ContactNumber {
+        align-self: stretch;
+        opacity: 0.8;
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+    .ContactMail {
+        align-self: stretch;
+        opacity: 0.8;
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+    .PC {
+        align-self: stretch;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media (max-width:500px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+    .PCName {
+        opacity: 0.4;
+        text-align: right;
+        color: white;
+        font-size: 10px;
+        font-family: Inter;
+        font-weight: 500;
+        overflow-wrap: break-word;
+        @media (max-width:500px) {
+            text-align: center;
+        }
+    }
+
+}
+
+// <div className="FooterCopyrightContainer" style={{width: 430, height: 823, position: 'relative'}}>
+//   <div className="SouscrireSurNotreNewsletters" style={{width: 343, left: 0, top: 743, position: 'absolute', color: 'white', fontSize: 40, fontFamily: 'Spectral', fontWeight: '400', lineHeight: 40, wordWrap: 'break-word'}}>Souscrire sur notre newsletters</div>
+//   <div className="FooterContainer" style={{width: 430, height: 823, paddingLeft: 128, paddingRight: 128, paddingTop: 64, paddingBottom: 64, left: 0, top: 0, position: 'absolute', background: '#1C1C20', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 16, display: 'inline-flex'}} />
+//   <div className="SouscrireSurNotreNewsletters" style={{width: 343, left: 58, top: 63, position: 'absolute', color: 'white', fontSize: 40, fontFamily: 'Spectral', fontWeight: '400', lineHeight: 40, wordWrap: 'break-word'}}>Souscrire sur notre newsletters</div>
+//   <div className="Frame288" style={{width: 315, height: 48, paddingLeft: 20, paddingRight: 20, paddingTop: 14, paddingBottom: 14, left: 58, top: 219, position: 'absolute', borderRadius: 12, overflow: 'hidden', border: '1px #34343C solid', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+//     <div className="EMail" style={{opacity: 0.50, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>E-mail</div>
+//     <div className="Vector9" style={{width: 15, height: 9, border: '1px white solid'}}></div>
+//   </div>
+//   <div className="Frame289" style={{width: 234, height: 162, left: 58, top: 330, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+//     <div className="AboutUs" style={{alignSelf: 'stretch', opacity: 0.40, color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '500', textTransform: 'uppercase', lineHeight: 14, letterSpacing: 0.40, wordWrap: 'break-word'}}>About us</div>
+//     <div className="Frame69" style={{alignSelf: 'stretch', height: 124, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'flex'}}>
+//       <div className="MentionsLGales" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Mentions légales</div>
+//       <div className="Guides" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Guides</div>
+//       <div className="Auteurs" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Auteurs</div>
+//       <div className="GestionDesCookies" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Gestion des cookies</div>
+//       <div className="ProposDeNous" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>À propos de nous</div>
+//     </div>
+//   </div>
+//   <div className="Frame290" style={{width: 181, height: 84, left: 58, top: 568, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+//     <div className="ContactsUs" style={{alignSelf: 'stretch', opacity: 0.40, color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '500', textTransform: 'uppercase', lineHeight: 14, letterSpacing: 0.40, wordWrap: 'break-word'}}>Contacts us</div>
+//     <div className="Frame252" style={{alignSelf: 'stretch', height: 46, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'flex'}}>
+//       <div className="10019817617" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>+1 (001) 981-76-17</div>
+//       <div className="InfoLogoipsumCom" style={{alignSelf: 'stretch', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>info@logoipsum.com</div>
+//     </div>
+//   </div>
+//   <div className="Frame291" style={{width: 114, height: 16, left: 58, top: 715, position: 'absolute', justifyContent: 'center', alignItems: 'center', gap: 30, display: 'inline-flex'}}>
+//     <div className="Telegram" style={{width: 18, height: 15, background: 'white'}}></div>
+//     <div className="Vector" style={{width: 16, height: 16, background: 'white'}}></div>
+//     <div className="Youtube" style={{width: 20, height: 15, background: 'white'}}></div>
+//   </div>
+//   <div className="Frame292" style={{width: 161, height: 14, left: 58, top: 771, position: 'absolute', justifyContent: 'space-between', alignItems: 'flex-start', display: 'inline-flex'}}>
+//     <div className="Privacy" style={{opacity: 0.40, textAlign: 'right', color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '500', lineHeight: 14, wordWrap: 'break-word'}}>Privacy</div>
+//     <div className="2023Copyright" style={{width: 155, opacity: 0.40, textAlign: 'right', color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '500', lineHeight: 14, wordWrap: 'break-word'}}>© 2023 — Copyright</div>
+//   </div>
+//   <div className="TousLesArticles" style={{width: 234, left: 58, top: 495, position: 'absolute', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Tous les articles</div>
+//   <div className="Contact" style={{width: 234, left: 58, top: 520, position: 'absolute', opacity: 0.80, color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '400', lineHeight: 19.60, wordWrap: 'break-word'}}>Contact</div>
+// </div>

@@ -1,0 +1,123 @@
+@use "../src/assets/styles/mixin" as mixin;
+
+
+.Header {
+    height: 131px;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    .Logo {
+     width: 122px;
+     height: 49px;
+     left:100px;
+     top: 33px;
+     position: absolute;
+    }
+     .LogoTitle {
+         width: 122px;
+         height: 49px;
+         left: 0;
+         top: 0;
+         font-size: 50px;
+         font-weight: 700;
+         color: black;
+     }
+     .MenuMobile {
+        display: none;
+        @media (max-width:500px) {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+     }
+     .Menu {
+         right: 230px;
+         top: 47px;
+         position: absolute;
+         justify-content: flex-start;
+         align-items: center;
+         gap: 52px;
+         display: inline-flex; 
+         @media (max-width:500px) {
+            display: none;
+         }
+         
+     }
+   
+     .MenuName {
+         padding-top: 10px;
+         padding-bottom: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+     }
+     .MenuTitle {
+         color: #131313;
+         font-size: 16px;
+         font-family: Inter;
+         font-weight: 700;
+         word-wrap: break-word;
+     }
+     .Connexion {
+         padding: 10px 24px 10px 10px;
+         right: 2px;
+         top: 26px;
+         position: absolute;
+         background-color: #131313;
+         border-radius: 100px;
+         display: inline-flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+     }
+     .ButtonConnexion {
+         padding: 10px;
+         border-radius: 100px;
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 10px;
+         
+     }
+     .ButtonConnexion2 {
+         width: 40px;
+         height: 40px;
+         position: relative;
+         
+     }
+  
+     .ConnexionName {
+         color: white;
+         font-size: 16px;
+         font-family: Inter;
+         font-weight: 700;
+         overflow-wrap: break-word;
+     }
+     .ConnexionToggle {
+         width: 18px;
+         height: 18px;
+         position: relative;
+     }
+     .MenuMobile {
+        @media (max-width: 500px) {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+    
+    .MobileMenuOpen {
+        @media (max-width: 500px) {
+            display: flex !important;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 10px;
+            
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(100%);
+        }
+    }
+     
+ }
